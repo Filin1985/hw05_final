@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+<section class="profile my-md">
+  <div class="container">
+    <div class="layout">
+      <div class="column column--1of3">
+        <div class="card text-center">
+          <div class="card__body dev">
+            <img class="avatar avatar--xl" src="{% static 'img/about/avatar.jpg' %}" />
+            <h2 class="dev__name">Марат Ихсанов</h2>
+            <p class="dev__title">FullStack разработчик</p>
+            <p class="dev__location">Россия, Москва</p>
+            <ul class="dev__social">
+              <li>
+                <a title="Github" href="https://github.com/Filin1985" target="_blank">Github</a>
+              </li>
+              <li>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/marat-ikhsanov-75b660118/" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <a title="Personal Website" href="https://www.romacoder.com/index.html" target="_blank">Мой сайт</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="column column--2of3">
+        <div class="devInfo">
+          <h3 class="devInfo__title">Немного обо мне</h3>
+          <p class="devInfo__about">
+            Обучаюсь и выполняю различные некоммерческие проекты с моменты поступления в University of London (Goldsmiths) по направлению Computer Science. Коммерческого опыта у меня нет. В основном я выполняю проекты для моей учебы, либо для собственного развития. Почти все мои проекты вы можете найти на моей странице в GitHub. Также я создал сайт на Django на текущей работе для облегчения ведения статистики по моим заказчикам.
+            <br />
+            Мой текущий проект вы можете посмотреть по ссылке . В данный момент переношу его в React, где делаю backend с помощью Node.js, а в качестве базы использую MongoDB. Текущий вариант можете посмотреть в репозитории https://github.com/Filin1985/BlackFox_React. Также прохожу обучение на курсе Python-Разработчик в ЯндексПрактикуме.
+          </p>
+        </div>
+        <div class="devInfo">
+          <h3 class="devInfo__title">Навыки</h3>
+          <div class="devInfo__skills">
+            <div class="devSkill">
+              <h4 class="devSkill__title">Python</h4>
+              <p class="devSkill__info">
+                Это основной мой инструмент, так как использую его как в работе так и в ежедневном самообучении. В основном пишу с помощью фреймворка Django. Обучаю своего сына данному языку.
+              </p>
+            </div>
+            <div class="devSkill">
+              <h4 class="devSkill__title">JavaScript</h4>
+              <p class="devSkill__info">
+                Знаю данный язык на среднем уровне. При необходимости смогу написать программу.
+              </p>
+            </div>
+            <div class="devSkill">
+              <h4 class="devSkill__title">React</h4>
+              <p class="devSkill__info">
+                Знаю синтаксис, хуки. Мало знаком с классовыми компонентами.
+              </p>
+            </div>
+            <div class="devSkill">
+              <h4 class="devSkill__title">PostgresSQL</h4>
+              <p class="devSkill__info">
+                Умею писать сложные запросы. Закончил курс обучения на ЯндексПрактикуме.
+              </p>
+            </div>
+            <div class="devSkill">
+              <h4 class="devSkill__title">Express(Node.js)</h4>
+              <p class="devSkill__info">
+                Проходил обучения. Могу написать простой CRUD
+              </p>
+            </div>
+            <div class="devSkill">
+              <h4 class="devSkill__title">MongoDB</h4>
+              <p class="devSkill__info">
+                Знаком с данной БД, смогу написать простую программ с использованием MERN стэк.
+              </p>
+            </div>
+
+            <h3 class="devInfo__subtitle">Дополнительные навыки</h3>
+            <div class="devInfo__otherSkills">
+              <span class="tag tag--pill tag--sub tag--lg">
+                <small>Figma</small>
+              </span>
+              <span class="tag tag--pill tag--sub tag--lg">
+                <small>DBeaver</small>
+              </span>
+              <span class="tag tag--pill tag--sub tag--lg">
+                <small>Postman</small>
+              </span>
+              <span class="tag tag--pill tag--sub tag--lg">
+                <small>C++</small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="devInfo">
+          <h3 class="devInfo__title">Проекты</h3>
+          <div class="grid grid--two">
+
+            <div class="column">
+              <div class="card project">
+                <a href="single-project.html">
+                  <div class="card__body">
+                    <h3 class="project__title">Кроссфит BlackFox</h3>
+                    <p><a href="https://gracious-thompson-c3858e.netlify.app/" target="_blank">Посмотреть проект</a></p>
+                    <div class="project__tags">
+                      <span class="tag tag--pill tag--main">
+                        <small>HTML</small>
+                      </span>
+                      <span class="tag tag--pill tag--main">
+                        <small>CSS</small>
+                      </span>
+                      <span class="tag tag--pill tag--main">
+                        <small>JavaScript</small>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card project">
+                <a href="single-project.html">
+                  <div class="card__body">
+                    <h3 class="project__title">Изучаем Языки</h3>
+                    <p><a class="project__author" href="https://spontaneous-dango-9d7aae.netlify.app/">Посмотреть проект</a></p>
+                    <div class="project__tags">
+                      <span class="tag tag--pill tag--main">
+                        <small>HTML</small>
+                      </span>
+                      <span class="tag tag--pill tag--main">
+                        <small>CSS</small>
+                      </span>
+                      <span class="tag tag--pill tag--main">
+                        <small>БЭМ</small>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
