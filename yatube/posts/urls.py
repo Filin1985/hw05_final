@@ -27,7 +27,7 @@ urlpatterns = [
     path('follow/', follow_index, name='follow_index'),
     path(
         'profile/<str:username>/follow/',
-        profile_follow, 
+        profile_follow,
         name='profile_follow'
     ),
     path(
