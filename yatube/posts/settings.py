@@ -1,0 +1,1 @@
+POST_NUM_ON_PAGE = 10
