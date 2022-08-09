@@ -1,4 +1,3 @@
-from functools import cache
 import shutil
 import tempfile
 
