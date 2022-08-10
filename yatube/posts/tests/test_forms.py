@@ -137,7 +137,6 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(post.author, self.post.author)
         self.assertEqual(post.image, uploaded)
 
-
     def test_post_create_page_show_correct_context(self):
         """
         Шаблоны post_create и post_edit
