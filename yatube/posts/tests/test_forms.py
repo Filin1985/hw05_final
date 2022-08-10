@@ -136,7 +136,7 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(post.group.id, new_post_form['group'])
         self.assertEqual(post.author, self.post.author)
         self.assertEqual(post.image, uploaded)
-                    
+
 
     def test_post_create_page_show_correct_context(self):
         """
