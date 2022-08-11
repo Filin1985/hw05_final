@@ -108,7 +108,10 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(new_post.text, form_data['text'])
         self.assertEqual(new_post.group.id, form_data['group'])
         self.assertEqual(new_post.author, self.user)
-        self.assertEqual(new_post.image.name, f'{Post.image.field.upload_to}{form_data["image"].name}')
+        self.assertEqual(
+          new_post.image.name,
+          f'{Post.image.field.upload_to}{form_data["image"].name}'
+        )
 
     def test_valid_form_edit_post(self):
         """Отправка валидной формы со страницы edit_post"""
