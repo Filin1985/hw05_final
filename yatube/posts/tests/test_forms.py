@@ -109,8 +109,8 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(new_post.group.id, form_data['group'])
         self.assertEqual(new_post.author, self.user)
         self.assertEqual(
-          new_post.image.name,
-          f'{Post.image.field.upload_to}{form_data["image"].name}'
+            new_post.image.name,
+            f'{Post.image.field.upload_to}{form_data["image"].name}'
         )
 
     def test_valid_form_edit_post(self):
