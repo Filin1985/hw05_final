@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.test import TestCase, Client
 from django.urls import reverse
 from http import HTTPStatus
