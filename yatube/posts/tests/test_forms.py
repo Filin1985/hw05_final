@@ -138,7 +138,7 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(post.text, new_post_form['text'])
         self.assertEqual(post.group.id, new_post_form['group'])
         self.assertEqual(post.author, self.post.author)
-                    
+ 
     def test_post_create_page_show_correct_context(self):
         """
         Шаблоны post_create и post_edit
