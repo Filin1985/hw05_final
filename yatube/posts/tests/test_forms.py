@@ -135,9 +135,7 @@ class PostCreateTestForms(TestCase):
         self.assertEqual(post.text, new_post_form['text'])
         self.assertEqual(post.group.id, new_post_form['group'])
         self.assertEqual(post.author, self.post.author)
-        self.assertEqual(post.image.name, f'{Post.image.field.upload_to}{new_post_form["image"].name}')
                     
-
     def test_post_create_page_show_correct_context(self):
         """
         Шаблоны post_create и post_edit
@@ -225,7 +223,6 @@ class PostCreateTestForms(TestCase):
         cases = [
             [self.not_auth, self.EDIT_REDIRECT],
             [self.follower, self.POST_DETAIL_URL],
-            [self.authorized_client, self.POST_DETAIL_URL]
         ]
         uploaded = SimpleUploadedFile(
             name='small.gif',
